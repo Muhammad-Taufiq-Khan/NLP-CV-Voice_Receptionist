@@ -9,18 +9,30 @@
 <body>
 
   {% if verification %} 
+  <div>
+    <h3>User:</h3>
+    {% include 'record.html' %}
+    <br>
+    <i class="fa fa-microphone" style="font-size:48px;color:red"></i>
+  </div>
   
-  <i class="fa fa-microphone" style="font-size:48px;color:red"></i>
   <!-- Unicode -->
   <!-- <i style="font-size:24px" class="fa">&#xf130;</i> -->
   <br>
 
+
+
+
+  <!-- Response from Robot -->
+  <div>
+    <h3>Robot: </h3>
   <audio controls autoplay>
     <!-- <source src="" type="audio/ogg"> -->
     <source src="static/audios/bot/bot_audio.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-
+  </div>
+  <!-- End Response -->
   {% else %}
   <h3>not verified</h3>
   {% endif %}

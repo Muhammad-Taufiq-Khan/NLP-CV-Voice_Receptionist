@@ -7,7 +7,7 @@ def speech_to_text():
     # with sr.WavFile("test.wav") as source:              # use "test.wav" as the audio source
         r.adjust_for_ambient_noise(source)
         print("Please say your query...")
-        audio = r.listen(source = source, timeout=3,phrase_time_limit=None)
+        audio = r.listen(source = source, timeout=3,phrase_time_limit=10)
         try:
             print("Recognizing Now .... ")
             text  = r.recognize_google(audio_data = audio,language='en', with_confidence= True, show_all=False)
