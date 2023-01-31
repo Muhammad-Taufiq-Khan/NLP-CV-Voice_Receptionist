@@ -26,3 +26,6 @@ SpeechRecognition==3.9.0
 tqdm==4.64.1
 urllib3==1.26.14
 Werkzeug==2.2.2
+
+
+# sudo apt install build-essential portaudio19-dev python3.10-dev
