@@ -12,5 +12,6 @@ def text_to_speech(text):
     os.system("mpg123 "+bot_audio_path)
 
 
-# urser_text_path = "static/texts/audio.txt"
-# text_to_speech(urser_text_path)
+# # urser_text_path = "static/texts/audio.txt"
+# text = "Hello! Welcome to artificial intelligence reception of the AIMS lab. If you have any query please click on the microphone icon and tell me. I'd love to assist you."
+# text_to_speech(text)
